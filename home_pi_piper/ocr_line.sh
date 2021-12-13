@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # -*- coding: utf-8 -*-
-source /home/pi/piper/.env
+source /home/pi/piper/config.txt
 
 input_file="/home/pi/piper/image.jpg"
 token=$TOKEN
