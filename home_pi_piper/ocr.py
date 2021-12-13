@@ -4,14 +4,14 @@ import pyocr.builders
 from PIL import Image, ImageDraw
 
 ###### Edit variables to your environment #######
-broker_address = "test.mosquitto.org"     #MQTT broker_address
-Topic = "case86-sy"
+broker_address = "broker.emqx.io"     #MQTT broker_address
+Topic = "piper-mqtt-sy"
 # Msg = "Greetings from mac pc !!!"
 
 def pub_mqtt(__self__, Msg):
     # publish MQTT
     print("creating new instance")
-    client = mqtt.Client("pub2") #create new instance
+    client = mqtt.Client() #create new instance
 
     print("connecting to broker: %s" % broker_address)
     client.connect(broker_address) #connect to broker
